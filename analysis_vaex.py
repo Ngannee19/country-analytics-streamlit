@@ -103,7 +103,8 @@ def top_population(
         cols = ["cca3", "name_common", "region", "population", "area"]
         if "density" in vx.get_column_names():
             cols.append("density")
-return vx.sort("population", ascending=False)[cols].head(n)
+
+    return vx.sort("population", ascending=False)[cols].head(n)
 
 
 def top_density(
